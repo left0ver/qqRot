@@ -1,0 +1,36 @@
+{
+  "name": "qqRot",
+  "version": "0.0.1",
+  "description": "一个基于oicq的qq机器人,用于定时在群里发布面试题和答案",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "cm": "npx cz",
+    "lint": "npx eslint ./src --fix",
+    "prepare": "husky install"
+  },
+  "keywords": ["qq","qqRot","bot","oicq"],
+  "repository": "https://github.com/left0ver/qqRot",
+  "author": "leftover",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "oicq": "^2.2.1"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-n": "^15.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
